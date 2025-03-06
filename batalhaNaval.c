@@ -22,6 +22,14 @@ int main() {
                 {
                     tabuleiro[linha][coluna] = 3; //navio na vertical
                 }
+                if(linha == 0 && coluna == 9 || linha == 1 && coluna == 8 || linha == 2 && coluna == 7)
+                {
+                    tabuleiro[linha][coluna] = 3; //navio na diagonal 1
+                }
+                if(linha == 6 && coluna == 1 || linha == 7 && coluna == 2 || linha == 8 && coluna == 3)
+                {
+                    tabuleiro[linha][coluna] = 3; //navio na diagonal 2
+                }
         }
     }
 
